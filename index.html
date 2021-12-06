@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypad Soluciones en Seguridad</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!--Cabecera-->
+    <header>        
+        <nav class="nav-main">
+            <img src="./assets/img/Logo400x400.png" alt="Keypad" class="nav-logo">
+            <ul class="nav-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/cctv.html">CCTV</a></li>
+                <li><a href="./pages/alarmas.html">Alarmas</a></li>
+                <li><a href="./pages/redes.html">Redes</a></li>
+                <li><a href="./pages/acceso-video.html">Acceso y Video</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul> 
+            <div class="nav-icon">
+                <a href="#"><i data-feather="search"></i></a>
+                <a href="#"><i data-feather="user"></i></a>
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+            </div>
+            <div class="nav-burguer"><i data-feather="menu"></i></div>            
+        </nav>
+        <div class="linea"></div>                              
+    </header> 
+    <!--Banner-->
+    <main class="banner">        
+        <h1>CCTV</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est sunt perferendis necessitatibus beatae officia. Eius provident aspernatur suscipit autem sapiente quos qui, a rem. Reiciendis error eveniet soluta ad tempore!</p>
+        <div href="" id="btn"> Leer Mas</div>
+    </main>  
+    <!--Categorias Secundarias-->
+    <article>
+        <h2>Soluciones para</h2>
+        <div class="cat-secundario">
+            <img src="assets/img/Casa.png" alt="casa-img" class="cat-img1">
+            <img src="assets/img/Comercio.png" alt="comercio-img" class="cat-img2">
+            <img src="assets/img/Educacion.png" alt="educacion-img" class="cat-img3">
+            <img src="assets/img/Trafico.png" alt="trafico-img" class="cat-img4">
+            <img src="assets/img/Banca.png" alt="banca-img" class="cat-img5">
+            <img src="assets/img/Edificio.png" alt="edificio-img" class="cat-img6">
+            <div href="#" class="cat-btn1">Casa</div>           
+            <div href="#" class="cat-btn2">Comercio</div>            
+            <div href="#" class="cat-btn3">Educacion</div>           
+            <div href="#" class="cat-btn4">Trafico</div>           
+            <div href="#" class="cat-btn5">Banca</div>            
+            <div href="#" class="cat-btn6">Edificio</div>   
+        </div>
+    </article>
+<!--Productos Destacados-->
+    <h2>Productos Destacados:</h2>
+    <section class="product-destacados"> 
+        <img src="assets/img/camara-PTZ-1.jpg" alt="Producto 1" class="img-producto-1">
+        <img src="assets/img/router-3.jpg" alt="Producto 2" class="img-producto-2"> 
+        <img src="assets/img/video-portero-3.jpg" alt="Producto 3" class="img-producto-3"> 
+        <img src="assets/img/alarma-gsm-2.jpg" alt="Producto 4" class="img-producto-4">    
+        <div class="info-producto">           
+            <h3>Primer Producto</h3>
+            <a href="">$ 9.990</a>
+        </div>
+        <div class="info-producto">           
+            <h3>Segundo Producto</h3>
+            <a href="">$ 9.990</a>
+        </div>
+        <div class="info-producto">          
+            <h3>Tercer Producto</h3>
+            <a href="">$ 9.990</a>
+        </div>
+        <div class="info-producto">           
+            <h3>Cuarto Producto</h3>
+            <a href="">$ 9.990</a>
+        </div>            
+    </section>
+<!--Marcas-->
+    <h2>Nuestras Marcas:</h2> 
+    <section class="marcas">               
+        <img src="assets/img/hikvision-logo.png" alt="hikvision-logo" width="300px" height="100px">
+        <img src="assets/img/hilook-logo.png" alt="hilook-logo" width="300px" height="100px">
+        <img src="assets/img/dahua-logo.png" alt="dahua-logo" width="300px" height="100px">
+        <img src="assets/img/ezviz-logo.png" alt="ezviz-logo" width="300px" height="100px">              
+    </section>  
+<!-- Pie de Pagina -->
+    <footer>
+        <div class= footer-container>
+            <ul class="tienda">
+                <li class="name"><h4>NUESTRA TIENDA</h4></li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <ul class="informacion">
+                <li class="name"><h4>INFORMACION</h4></li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <ul class="redes-sociales">
+                <li class="name"><h4 id="rss">SIGUENOS<i data-feather="rss"></i></h4></li>
+                <li><a href="#"><i data-feather="facebook"></i></a></li>
+                <li><a href="#"><i data-feather="instagram"></i></a></li>
+                <li><a href="#"><i data-feather="twitter"></i></a></li>
+            </ul>
+        </div>            
+    </footer>  
+    <script>feather.replace()</script> 
+    <script> 
+        document.querySelector(".nav-burguer").addEventListener("click", () => {
+        document.querySelector(".nav-menu").classList.toggle("show");});     
+    </script> 
+</body>
+</html>
