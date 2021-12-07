@@ -31,6 +31,11 @@ ul{
 .nav-menu{    
     display: flex;  
 }
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem; 
+    padding-left: 0rem
+}
 .nav-menu li{    
     padding: 10px;
 }
@@ -63,97 +68,19 @@ ul{
     border-top: 1px solid #86868642;
     width: 66%;
     height: 6px; 
-    margin: 4px auto auto 290px;
+    margin: 4px auto 10px 290px;
 } 
 /* Banner */
-.banner{
-    width: 100%;
-    height: 500px;
-    margin-top: 10px;  
-    background-image: url(../assets/img/Slider-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #12132c;     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;    
+.carousel-caption h5{
+    font-size: 3.25rem;
+    color: black;
 }
-.banner-CCTV{    
-    width: 100%;   
-    height: 330px; 
-    margin-top: 10px;   
-    background-image: url(../assets/img/Slider-CCTV.jpg);
-    background-color: #3b5aab75;
-    background-blend-mode: soft-light;       
-    background-repeat: no-repeat; 
-    background-position: center;    
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.carousel-caption p{
+    font-size: 1.2rem;
+    color: #220101;    
 }
-.banner-alarmas{
-    width: 100%;   
-    height: 330px; 
-    margin-top: 10px;   
-    background-image: url(../assets/img/Slider-Alarmas.jpg);
-    background-color: #11204894;
-    background-blend-mode: soft-light;       
-    background-repeat: no-repeat; 
-    background-position: center;    
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.banner-redes{
-    width: 100%;   
-    height: 330px; 
-    margin-top: 10px;   
-    background-image: url(../assets/img/Slider-Redes.jpg);
-    background-color: #112048a3;
-    background-blend-mode: soft-light;       
-    background-repeat: no-repeat; 
-    background-position: center;    
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.banner-acceso{
-    width: 100%;   
-    height: 330px; 
-    margin-top: 10px;   
-    background-image: url(../assets/img/Slider-AccesoyVideo.jpg);
-    background-color: #111318ba;
-    background-blend-mode: soft-light;       
-    background-repeat: no-repeat; 
-    background-position: center;    
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#btn {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    border-radius: 10px; 
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #262626;
-    color:white;
-    font-size: 15px;
-    border: 1px solid rgb(129, 117, 117);
-    margin: 10px 0px;
-}
-#btn:hover{
-    opacity: .8;
+.carousel-item img{
+    filter: saturate(0.6);
 }
 /* Categorias Secundarias*/
 .cat-secundario{
@@ -254,7 +181,7 @@ footer{
 .footer-container svg:hover{
     color: blue;
 }
-/* Categoria CCTV */
+/* Categorias */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -263,7 +190,8 @@ footer{
     width: 90%;
     margin: 20px auto;
     justify-items: center;  
-    align-items: center;     
+    align-items: center;  
+    margin-top: 40px;   
 }
 .grid-container img{
     width: 250px;
@@ -271,6 +199,8 @@ footer{
     border-radius: 30px;
 }
 .info-producto-1{    
+    transition: all 300ms;
+    position: relative;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     padding: 5px 5px 5px 5px;
@@ -278,6 +208,9 @@ footer{
     border-color: #7a7a7a;
     border-radius: 10px;
     text-align: center;
+}
+.info-producto-1:hover{
+    transform: scale(1.15)
 }
 .titulo-producto{
     color: #54595f;   
