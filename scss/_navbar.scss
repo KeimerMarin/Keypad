@@ -1,0 +1,53 @@
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: $alinear;
+    align-items: $alinear;
+    height: 60px;
+        .nav-logo{
+            align-items: $alinear;
+            width: 90px;
+            margin-top: 20px;            
+        }
+}
+.nav-menu{
+    display: flex;
+    li{
+        padding: $catg-ten
+    }
+}
+.nav-main{
+    ul li a{
+        color: $color-nav;
+        padding: 4px;
+        &:hover{
+        opacity: .9;
+        color: brown;
+        }
+    }
+}
+.nav-icon{
+    svg{
+        color: $color-nav-icon;
+        width: 2em;
+        height: 2em; 
+        margin-right: 15px; 
+        &:hover{
+            opacity: 0.9;   
+            color: black;
+        } 
+    }
+}
+.nav-burguer{
+    position: absolute;
+    cursor: pointer;
+    right: 30px; 
+    z-index: 2; 
+    display: none; 
+}
+.linea{
+    border-top: 1px solid #86868642;
+    width: 66%;
+    height: 6px; 
+    margin: 4px auto 10px 290px;
+} 

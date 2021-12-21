@@ -1,0 +1,49 @@
+.banner-slides{
+    .mySlides{
+        display: none;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition:  0.6s ease;
+} 
+//EXTEND
+.banner-CCTV{   
+    width: 100%;   
+    height: 330px; 
+    margin-top: 10px; 
+    background-image: url(../assets/img/Slider-CCTV.jpg);
+    background-color: #3b5aab75;
+    background-blend-mode: soft-light;       
+    background-repeat: no-repeat; 
+    background-position: $alinear;    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: $alinear;
+    justify-content: $alinear;   
+}
+.banner-alarmas{
+    @extend .banner-CCTV;
+    background-image: url(../assets/img/Slider-Alarmas.jpg);
+    background-color: #11204894;
+}
+.banner-redes{
+    @extend .banner-CCTV; 
+    background-image: url(../assets/img/Slider-Redes.jpg);
+    background-color: #112048a3;
+}
+.banner-acceso{
+    @extend .banner-CCTV;
+    background-image: url(../assets/img/Slider-AccesoyVideo.jpg);
+    background-color: #111318ba;
+}

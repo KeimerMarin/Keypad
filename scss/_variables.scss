@@ -1,0 +1,59 @@
+//variables
+$color-fondo: linear-gradient(to right, #e3e3e385, #dbdbdb26, #F2F2F2, #e3e3e385);
+$color-nav: rgb(0, 0, 0);
+$color-nav-icon: #a70909;
+$tipografia: 'Oswald', sans-serif; 
+$style-border: solid;
+$shadow-border: 0 0 10px 0 rgb(0 0 0 / 50%);
+
+//MAP
+//Catg-productos
+$grilla-catg: (
+    grilla: grid,
+    alinear: center,
+    catg-border: 1px 1px 1px 1px,
+    catg-relleno: 5px 5px 5px 5px,
+    catg-color: #7a7a7a,
+    catg-ten: 10px,
+);
+$grilla: map-get($grilla-catg,grilla);
+$alinear: map-get($grilla-catg,alinear);
+$catg-border: map-get($grilla-catg,catg-border);
+$catg-relleno: map-get($grilla-catg,catg-relleno);
+$catg-color: map-get($grilla-catg,catg-color);
+$catg-ten: map-get($grilla-catg,catg-ten);
+
+//MIXIN
+//Catg-productos
+@mixin style-product {
+    position: relative;
+    border-style: $style-border;
+    border-width: $catg-border;
+    padding: $catg-relleno;
+    box-shadow: $shadow-border;
+    border-color: $catg-color;
+    border-radius: $catg-ten;
+    text-align: $alinear;    
+};
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $color-fondo;
+    font-family: $tipografia;   
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: $color-nav;
+}
+ul{
+    list-style: none;
+}
+h2{
+    text-align: $alinear;
+    margin: 16px;
+}

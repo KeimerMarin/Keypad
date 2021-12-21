@@ -1,0 +1,50 @@
+// Categorias Secundarias
+.cat-secundario{
+    display: $grilla;
+    grid-template-columns: repeat(6, 1fr);  
+    place-items: $alinear;  
+    width: 80%;
+    margin: auto;
+    .product-secundario{       
+        @include style-product();
+        img{
+            width: 140px;
+            height: 136px;
+            padding: 13px 3px;
+        }
+        .title-secundario{
+            text-align: $alinear;
+            margin-top: -30px;
+            margin-bottom: $catg-ten;  
+            font-size: 25px;   
+            color: #333;  
+        }
+    }
+}
+// Productos Destacados
+.product-destacados{       
+    display: $grilla;
+    grid-template-columns: repeat(4, 1fr);    
+    place-items: $alinear;
+    gap: $catg-ten;  
+    .info-producto{    
+        transition: all 300ms;
+        @include style-product();
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }    
+}
+//Marcas 
+.marcas{
+    display: $grilla;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    place-items: $alinear;
+    margin-bottom: 15px;
+}

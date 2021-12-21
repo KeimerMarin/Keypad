@@ -1,0 +1,42 @@
+//footer
+footer{
+    margin-top: 25px;
+    width: 100%;
+    background: url(../assets/img/footer.jpg);
+    background-color: #363a4273;
+    background-blend-mode: soft-light; 
+    background-repeat: no-repeat;
+    background-position: $alinear; 
+    background-size: cover;    
+    font-size: 16px;   
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        width: 60%;
+        margin: auto;
+        ul li{
+            line-height: 2.5;
+            color: white;
+        } 
+        .redes-sociales{
+            a{color: white;
+            }
+            .name{
+                font-size: 20px;
+                &:hover{
+                    color: brown;
+                }
+                svg{
+                    margin-bottom: -8px;
+                }
+            }
+        } 
+        svg{
+            height: 34px;
+            width: 42px;
+            &:hover{
+                color: blue;
+            }
+        } 
+    }
+}
