@@ -24,6 +24,7 @@ h2 {
   margin: 16px;
 }
 
+/* Cabecera */
 .nav-main {
   font-size: 17px;
   display: flex;
@@ -79,6 +80,168 @@ h2 {
   margin: 4px auto 10px 290px;
 }
 
+/* PopUp Login-Registro */
+.container-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 600ms;
+}
+.container-popup:target {
+  background: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  opacity: 1;
+}
+.container-popup:target .popup {
+  left: 30%;
+  transform: rotate(0deg);
+  translate: -50%, -50%;
+  visibility: visible;
+}
+.container-popup .popup {
+  max-width: 450px;
+  height: 525px;
+  position: relative;
+  display: flex;
+  background: white;
+  visibility: hidden;
+  transform: rotate(90deg) translate(-150%, -230%);
+  transition: all 600ms;
+}
+.container-popup .popup .container-login {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+}
+.container-popup .popup .container-login h1 {
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 600;
+}
+.container-popup .popup .container-login h4 {
+  margin: -20px auto;
+  font-weight: 400;
+}
+.container-popup .popup .container-login .picture {
+  margin: 4px 0 10px 0;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.container-popup .popup .container-login .btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #EEEEEE;
+  color: #333333;
+  border: 1px solid #eee;
+}
+.container-popup .popup .container-login .btn-login:hover {
+  opacity: 0.8;
+}
+.container-popup .popup .container-login .olvido {
+  text-decoration: none;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-popup .popup .container-login .btn-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #EEEEEE;
+  color: #333333;
+  border: 1px solid #eee;
+}
+.container-popup .popup .container-login .btn-registro:hover {
+  opacity: 0.8;
+}
+.container-popup .popup .container-login small {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.container-popup .popup .btn-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 10px;
+  color: black;
+  border-radius: 50%;
+  line-height: 10px;
+}
+
+/* PopUp Busqueda */
+.container-search {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding-top: 220px;
+  padding-right: 130px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 600ms;
+}
+.container-search:target {
+  background: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  opacity: 1;
+}
+.container-search:target .popup-search {
+  left: 30%;
+  transform: rotate(0deg);
+  translate: -50%, -50%;
+  visibility: visible;
+}
+.container-search .popup-search {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 120px;
+  border-radius: 4px;
+  background: #fff;
+  visibility: hidden;
+  transform: rotate(90deg) translate(-150%, -230%);
+  transition: all 600ms;
+}
+.container-search .popup-search .input-search {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: 47px;
+}
+.container-search .popup-search .input-search h4 {
+  text-align: inherit;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.container-search .popup-search .input-search .picture1 {
+  height: 70px;
+  background-color: #f1f3f5;
+  margin: 4px 0 10px 0;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Banner */
 .banner-slides .mySlides {
   display: none;
 }
@@ -112,10 +275,12 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
 .banner-alarmas {
   background-image: url(../assets/img/Slider-Alarmas.jpg);
   background-color: #11204894;
 }
+
 .banner-redes {
   background-image: url(../assets/img/Slider-Redes.jpg);
   background-color: #112048a3;
@@ -126,6 +291,7 @@ h2 {
   background-color: #111318ba;
 }
 
+/* Categorias Secundarias*/
 .cat-secundario {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -134,7 +300,6 @@ h2 {
   margin: auto;
 }
 .cat-secundario .product-secundario {
-  position: relative;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   padding: 5px 5px 5px 5px;
@@ -156,6 +321,7 @@ h2 {
   color: #333;
 }
 
+/* Productos Destacados */
 .product-destacados {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -164,7 +330,6 @@ h2 {
 }
 .product-destacados .info-producto {
   transition: all 300ms;
-  position: relative;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   padding: 5px 5px 5px 5px;
@@ -182,6 +347,7 @@ h2 {
   border-radius: 30px;
 }
 
+/* Marcas */
 .marcas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -190,6 +356,7 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* Pie de pagina  */
 footer {
   margin-top: 25px;
   width: 100%;
@@ -231,6 +398,7 @@ footer .footer-container svg:hover {
   color: blue;
 }
 
+/* Categorias */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -248,7 +416,6 @@ footer .footer-container svg:hover {
 }
 .grid-container .info-producto-1 {
   transition: all 300ms;
-  position: relative;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   padding: 5px 5px 5px 5px;
@@ -267,6 +434,235 @@ footer .footer-container svg:hover {
   font-size: 20px;
   color: #971212;
   font-weight: 600;
+}
+
+/* Resolucion Celulares */
+@media (max-width: 600px) {
+  /* Cabecera */
+  .nav-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  .nav-main .nav-logo {
+    width: 100px;
+    margin: -25px -50px;
+  }
+  .nav-main .nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #131f30;
+    height: 100%;
+    padding: 18px;
+    opacity: 0.9;
+    transform: translatex(-400px);
+    transition: transform 0.5 ease-in-out;
+  }
+  .nav-main .nav-menu li {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .nav-main .nav-menu.show {
+    transform: translatex(-20px);
+  }
+  .nav-main ul li a {
+    color: white;
+  }
+  .nav-main .nav-icon svg {
+    color: #d45656;
+    width: 2em;
+    height: 2em;
+    margin-right: 20px;
+  }
+  .nav-main .nav-burguer {
+    display: block;
+  }
+  .nav-main .nav-burguer svg {
+    color: #d45656;
+    width: 2em;
+    height: 2em;
+  }
+
+  .linea {
+    border-top: 1px solid #7c4b4b42;
+    height: 6px;
+    margin: 5px auto auto 110px;
+  }
+
+  /* PopUp Login-Registro */
+  .container-popup:target .popup {
+    top: 20px;
+    left: 0px;
+  }
+
+  .popup {
+    height: 470px;
+  }
+
+  .picture {
+    margin: 4px 0 10px 0;
+    padding: 0 5px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .olvido a {
+    margin: 100px 15px;
+  }
+
+  .container-popup .container-login small {
+    margin-top: 5px;
+    font-size: 9px;
+  }
+
+  /*PopUp Busqueda*/
+  .container-search {
+    padding-right: 60px;
+  }
+
+  .container-search:target .popup-search {
+    left: 8%;
+  }
+
+  .container-search .popup-search {
+    width: 100%;
+  }
+
+  /*Banner*/
+  .banner-slides .mySlides img {
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .banner-CCTV, .banner-alarmas, .banner-redes, .banner-acceso {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 120px;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner-CCTV .paragraph-banner, .banner-alarmas .paragraph-banner, .banner-redes .paragraph-banner, .banner-acceso .paragraph-banner {
+    display: none;
+  }
+
+  .banner-alarmas {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 120px;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner-alarmas .paragraph-banner {
+    display: none;
+  }
+
+  .banner.redes {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 120px;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner.redes .paragraph-banner {
+    display: none;
+  }
+
+  .banner-acceso {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 120px;
+    background-position: top;
+    background-size: cover;
+  }
+  .banner-acceso .paragraph-banner {
+    display: none;
+  }
+
+  /*Categorias Secundarias*/
+  .cat-secundario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .cat-secundario .product-secundario {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-color: #7a7a7a;
+    border-radius: 10px;
+  }
+
+  /*Productos Destacados*/
+  .product-destacados {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-destacados .info-producto {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+  .product-destacados .product-destacados img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Marcas */
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Pie de Pagina */
+  footer .footer-container {
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: 145px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    grid-template-areas: "space1 space2" "space3 space3";
+  }
+  footer .footer-container .tienda {
+    grid-area: space1;
+  }
+  footer .footer-container .informacion {
+    grid-area: space2;
+  }
+  footer .footer-container h4 {
+    font-size: 20px;
+  }
+  footer .footer-container .redes-sociales {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-container .redes-sociales #rss {
+    display: none;
+  }
+  footer .footer-container .redes-sociales svg {
+    color: #fffefe;
+    height: 50px;
+    width: 50px;
+    margin: 10px 25px;
+  }
+
+  /* Categorias */
+  .grid-container {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: 220px;
+    justify-content: space-around;
+    margin-top: auto;
+  }
+  .grid-container img {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

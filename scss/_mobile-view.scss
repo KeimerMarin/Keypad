@@ -1,0 +1,216 @@
+/* Resolucion Celulares */
+@media (max-width: $breakpoint-mobile) {
+    /* Cabecera */
+    .nav-main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        .nav-logo {
+            width: 100px;
+            margin: -25px -50px;
+        }
+        .nav-menu{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #131f30;
+            height: 100%;
+            padding: 18px;
+            opacity: .9;
+            transform: translatex(-400px);
+            transition: transform .5 ease-in-out;
+            li{
+                padding: 15px;
+                font-size: 14px;
+            }
+        }    
+        .nav-menu.show{
+            transform: translatex(-20px);
+        }
+        ul li a{
+            color: white;
+        } 
+        .nav-icon svg{
+            color: #d45656;
+            width: 2em;
+            height: 2em;
+            margin-right: 20px;
+        }
+        .nav-burguer{
+            display: block;
+            svg{
+                color: #d45656;
+                width: 2em;
+                height: 2em;  
+            }
+        } 
+    }
+    .linea{
+        border-top: 1px solid #7c4b4b42;        
+        height: 6px;
+        margin: 5px auto auto 110px;
+    }  
+    /* PopUp Login-Registro */
+    .container-popup:target .popup{
+        top: 20px;
+        left: 0px;
+    }
+    .popup{    
+        height: 470px;        
+        }
+    .picture {
+        margin: 4px 0 10px 0;
+        padding: 0 5px;
+        font-size: 10px;
+        font-weight: 600;
+    }    
+    .olvido a{    
+        margin: 100px 15px;    
+    }
+    .container-popup .container-login small {
+        margin-top: 5px;
+        font-size: 9px;
+    }
+    /*PopUp Busqueda*/
+    .container-search{
+        padding-right: 60px;
+    }
+    .container-search:target .popup-search{
+        left: 8%;
+    }
+    .container-search .popup-search{
+        width: 100%;
+    }
+    /*Banner*/
+    .banner-slides{
+        .mySlides{
+            img{
+                margin-top: 15px;
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+    .banner-CCTV{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 120px;
+        background-position: top;        
+        background-size: cover;
+        .paragraph-banner{
+            display: none;
+        }
+    }
+    .banner-alarmas{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 120px;
+        background-position: top;        
+        background-size: cover;
+        .paragraph-banner{
+            display: none;
+        }
+    }
+    .banner.redes{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 120px;
+        background-position: top;        
+        background-size: cover;
+        .paragraph-banner{
+            display: none;
+        }
+    }
+    .banner-acceso{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        height: 120px;
+        background-position: top;        
+        background-size: cover;
+        .paragraph-banner{
+            display: none;
+        }
+    }
+    /*Categorias Secundarias*/
+    .cat-secundario{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;  
+        .product-secundario{
+            box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+            border-color: #7a7a7a;
+            border-radius: 10px;
+        }      
+    } 
+    /*Productos Destacados*/
+    .product-destacados{
+        display: flex;
+        flex-direction: column;  
+        .info-producto{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+        .product-destacados img {
+            width: 80%;
+            height: 80%;
+        }      
+    } 
+    /* Marcas */
+    .marcas{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    /* Pie de Pagina */
+    footer{
+        .footer-container{
+            font-size: 12px;
+            display: grid;
+            grid-template-columns: repeat(2, 160px);
+            grid-template-rows: 145px;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: auto;  
+            grid-template-areas: 
+            "space1 space2"
+            "space3 space3"; 
+            .tienda{grid-area: space1;}
+            .informacion{grid-area: space2;}
+            h4{
+                font-size: 20px;
+            }
+            .redes-sociales{
+                display: flex;
+                align-items: center;
+                #rss{
+                    display: none;
+                }
+                svg{
+                    color: #fffefe;
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px 25px;
+                    } 
+            }   
+        } 
+    }
+    /* Categorias */
+    .grid-container{
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);  
+        grid-template-rows: 220px;     
+        justify-content: space-around;
+        margin-top: auto;
+        img{
+            width: 140px;
+            height: 140px;
+        }
+    }  
+}
+
+
+

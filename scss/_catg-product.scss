@@ -1,4 +1,4 @@
-// Categorias Secundarias
+/* Categorias Secundarias*/
 .cat-secundario{
     display: $grilla;
     grid-template-columns: repeat(6, 1fr);  
@@ -21,7 +21,7 @@
         }
     }
 }
-// Productos Destacados
+/* Productos Destacados */
 .product-destacados{       
     display: $grilla;
     grid-template-columns: repeat(4, 1fr);    
@@ -40,7 +40,7 @@
         border-radius: 30px;
     }    
 }
-//Marcas 
+/* Marcas */ 
 .marcas{
     display: $grilla;
     grid-template-columns: repeat(4, 1fr);

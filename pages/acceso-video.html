@@ -28,13 +28,61 @@
                 <li><a href="#">Contactanos</a></li>
                 </ul>  
                 <div class="nav-icon">
-                    <a href="#"><i data-feather="search"></i></a>
-                    <a href="#"><i data-feather="user"></i></a>
+                    <a href="#busqueda"><i data-feather="search"></i></a>
+                    <a href="#modal"><i data-feather="user"></i></a>
                     <a href="#"><i data-feather="shopping-cart"></i></a>
                 </div>   
                 <div class="nav-burguer"><i data-feather="menu"></i></div>
         </nav>    
-        <div class="linea"></div>                           
+        <div class="linea"></div>   
+        <div class="container-popup" id="modal">
+            <div class="popup">
+                <div class="container-login">
+                    <h1>Bienvenido a Keypad</h1>
+                    <h4> Complete el formulario</h4>   
+                    <input class="picture" type="text" placeholder="Email">
+                    <input class="picture" type="password" placeholder="Contraseña"> 
+                    <a href="#" class="btn-login">Iniciar Seccion</a>
+                    <a href="#" class="olvido">¿Olvidaste la contraseña?</a>
+                    <a href="#Registro" class="btn-registro">Regístrate</a>
+                    <small>
+                        Al iniciar sesión, acepto la Política de Privacidad
+                        <br>
+                        y los terminos de uso
+                    </small>
+                </div>
+                <a href="#" class="btn-close">X</a>
+            </div>
+        </div>
+        <div class="container-popup" id="Registro">
+            <div class="popup">
+                <div class="container-login">
+                    <h1>Bienvenido a Keypad</h1>
+                    <h4> Complete el formulario</h4>   
+                    <input class="picture" type="text" placeholder="Nombre y Apellido">
+                    <input class="picture" type="email" id="email" placeholder="Email">                 
+                    <input class="picture" type="number" placeholder="Telefono"> 
+                    <input class="picture" type="password" id="password" placeholder="Contraseña">
+                    <input class="picture" type="password" placeholder="Repite Contraseña">                               
+                    <a href="#" class="btn-registro">Registrarse</a>
+                    <small>
+                    Al iniciar sesión, acepto la Política de Privacidad
+                    <br>
+                    y los terminos de uso
+                    </small>
+                </div>
+                <a href="#" class="btn-close">X</a>
+            </div>
+        </div> 
+        <div class="container-search" id="busqueda">
+            <div class="popup-search">
+                <div class="input-search">
+                    <h4> Escribe para buscar</h4>   
+                    <input class="picture1" type="search" placeholder="Buscar....">
+                </div>
+                <a href="#" class="btn-close">X</a>
+            </div>
+        </div>                         
     </header> 
 <!--Banner-->
 <main class="banner-acceso">        
@@ -112,28 +160,28 @@
     </section>  
     <h2>Cerradura Digital</h2>   
 <!-- Pie de Pagina -->
-<footer>
-    <div class= footer-container>
-        <ul class="tienda">
-            <li class="name"><h4>NUESTRA TIENDA</h4></li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-        </ul>
-        <ul class="informacion">
-            <li class="name"><h4>INFORMACION</h4></li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-        </ul>
-        <ul class="redes-sociales">
-            <li class="name"><h4 id="rss">SIGUENOS<i data-feather="rss"></i></h4></li>
-            <li><a href="#"><i data-feather="facebook"></i></a></li>
-            <li><a href="#"><i data-feather="instagram"></i></a></li>
-            <li><a href="#"><i data-feather="twitter"></i></a></li>
-        </ul>
-    </div>            
-</footer>
+    <footer>
+        <div class= footer-container>
+            <ul class="tienda">
+                <li class="name"><h4>NUESTRA TIENDA</h4></li>
+                <li>Direccion: General Prieto 1305</li>
+                <li>Telefono: +56 93554 8812</li>
+                <li>Horario: L-V 9:00H a 18:00H</li>
+            </ul>
+            <ul class="informacion">
+                <li class="name"><h4>INFORMACION</h4></li>
+                <li>Garantia</li>
+                <li>Sobre Nosotros</li>
+                <li>Preguntas Frecuentes</li>
+            </ul>
+                <ul class="redes-sociales">
+                    <li class="name"><h4 id="rss">SIGUENOS<i data-feather="rss"></i></h4></li>
+                    <li><a href="#"><i data-feather="facebook"></i></a></li>
+                    <li><a href="#"><i data-feather="instagram"></i></a></li>
+                    <li><a href="#"><i data-feather="twitter"></i></a></li>
+                </ul>
+            </div>            
+    </footer>
     <script>feather.replace()</script>  
     <script> 
         document.querySelector(".nav-burguer").addEventListener("click", () => {

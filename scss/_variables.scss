@@ -5,6 +5,7 @@ $color-nav-icon: #a70909;
 $tipografia: 'Oswald', sans-serif; 
 $style-border: solid;
 $shadow-border: 0 0 10px 0 rgb(0 0 0 / 50%);
+$breakpoint-mobile: 600px;
 
 //MAP
 //Catg-productos
@@ -26,7 +27,6 @@ $catg-ten: map-get($grilla-catg,catg-ten);
 //MIXIN
 //Catg-productos
 @mixin style-product {
-    position: relative;
     border-style: $style-border;
     border-width: $catg-border;
     padding: $catg-relleno;
