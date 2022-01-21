@@ -1,0 +1,40 @@
+/*Resolucion Desktop 1024P */
+@media (max-width: $breakpoint-desktop){
+    .banner-slides .mySlides img {
+        height: 400px;
+    }
+    .cat-secundario {
+        display: $grilla;
+        grid-template-columns: repeat(6, 1fr);
+        place-items: $alinear;
+        width: 100%;
+    }
+    .product-destacados{
+        img {
+            height: 220px;
+            width: 220px;
+            height: 250;
+            border-radius: 30px;
+        }
+    } 
+    .marcas {
+        display: $grilla;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        place-items: center;
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+    .grid-container{
+        width: 100%;
+        img {
+            width: 220px;
+            height: 220px;        
+        }
+    }
+    footer{
+        .footer-container {            
+            width: 80%;            
+        }
+    } 
+}

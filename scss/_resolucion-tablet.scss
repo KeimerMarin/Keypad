@@ -1,0 +1,119 @@
+/*Resolucion Tablet 768p*/
+@media (max-width: $breakpoint-tablet){
+    .nav-main{
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        .nav-logo {
+            width: 110px;
+            margin: -42px -50px;
+        }
+        .nav-menu{
+            display: block;
+            position: absolute;
+            top: 0; 
+            left: 0;
+            background: #131f30;
+            height: 100%;
+            padding: 18px;
+            opacity: .9;
+            transform: translatex(-400px);
+            transition: transform .5 ease-in-out;
+            li{
+                padding: 15px;
+                font-size: 14px;
+            }
+        }    
+        .nav-menu.show{
+            transform: translatex(-20px);
+        }
+        ul li a{
+            color: white;
+        } 
+        .nav-icon svg{
+            color: #d45656;
+            width: 2em;
+            height: 2em;            
+        }
+        .nav-burguer{
+            display: flow-root;
+            svg{
+                color: #d45656;
+                width: 2em;
+                height: 2em;  
+            }
+        } 
+    }
+    .nav-burguer{
+        position: inherit;       
+    }
+    .linea{
+        border-top: 1px solid #7c4b4b42;        
+        height: 6px;
+        margin: 5px auto auto 110px;
+    }  
+    /* PopUp Login-Registro */
+    .container-popup:target .popup{
+        top: 20px;
+        left: 90px;
+    }
+    .popup{    
+        height: 470px;        
+        }
+    .picture {
+        margin: 4px 0 10px 0;
+        padding: 0 5px;
+        font-size: 10px;
+        font-weight: 600;
+    }    
+    .olvido a{    
+        margin: 100px 15px;    
+    }
+    .container-popup .container-login small {
+        margin-top: 5px;
+        font-size: 9px;
+    }
+    /*PopUp Busqueda*/
+    .container-search{
+        padding-right: 60px;
+    }
+    .container-search:target .popup-search{
+        left: 14%;
+    }
+    .container-search .popup-search{
+        width: 75%;
+    }
+    .banner-slides .mySlides img {
+        margin-top: 30px;
+        width: 100%;
+        height: 260px;
+    }
+    .cat-secundario {
+        display: $grilla;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;        
+        margin-top: 28px;
+    }
+    .banner-CCTV{
+        height: 260px;
+        .paragraph-banner{
+            display: none;
+        }
+    }
+    .product-destacados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+        margin-top: 28px;     
+    }    
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+    }
+    footer{
+        .footer-container {            
+            grid-template-columns: repeat(3, 230px);           
+        }
+    } 
+
+}
